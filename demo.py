@@ -53,12 +53,74 @@ shuxing_name = []
 shuxing_value = []
 shuxing_visible = []
 shuxing_global = []
+yuan_1 = []
+yuan_2 = []
+yuan_3 = []
+yuan_4 = []
+yuan_5 = []
+yuan_6 = []
+yuan_7 = []
+yuan_8 = []
+yuan_9 = []
+yuan_10 = []
+yuan_11 = []
+yuan_12 = []
+yuan_13 = []
+yuan_14 = []
+yuan_15 = []
+yuan_16 = []
+yuan_17 = []
+yuan_18 = []
+yuan_19 = []
+yuan_20 = []
+yuan_21 = []
+yuan_22 = []
+yuan_23 = []
+yuan_24 = []
+yuan_25 = []
+yuan_26 = []
+yuan_27 = []
+yuan_28 = []
+yuan_29 = []
+yuan_30 = []
+yuan_31 = []
+yuan_32 = []
+yuan_33 = []
+yuan_34 = []
+yuan_35 = []
+yuan_36 = []
+yuan_37 = []
+yuan_38 = []
+yuan_39= []
+yuan_40 = []
+yuan_41 = []
+yuan_42 = []
+yuan_43 = []
+yuan_44 = []
+yuan_45 = []
+yuan_46 = []
+yuan_47 = []
+yuan_48 = []
+yuan_49 = []
+yuan_50 = []
+yuan_51 = []
+yuan_52 = []
+yuan_53 = []
+yuan_54 = []
+yuan_55 = []
+yuan_56 = []
+yuan_57 = []
+yuan_58= []
+yuan_59 = []
+yuan_60 = []
+yuan_61 = []
+yuan_62 = []
 
 '''
 https://raw.githubusercontent.com/Sgzhlh/JBull/master/Football/Popular Club/AC Milan/AC Milan F.C Ronaldinho 2009_2010 Home Retro Premium Jersey/01.jpg
 '''
 #source_dir_name = r'D:\python_code\AC Milan'
-source_dir_name = input(r'请输入AC Milan的完整路径(类似D:\python_code\AC Milan):')
+source_dir_name = input(r'请输入完整路径:')
 sku_name_pre = 'jbull-0'
 
 
@@ -73,14 +135,14 @@ def getUniqueId():
     return random.randint(start_num,end_num)
 
 def validPrice(dir_name):
-    # 判断str 是否有long
-    long_tip = 'long'
+    # 判断str 是否有Long
+    long_tip = 'Long'
     if re.search(long_tip, dir_name):
         cuxiao_price = 44.99
         normal_price = 94.99
     else:
-        cuxiao_price = 44.99
-        normal_price = 94.99
+        cuxiao_price = 39.99
+        normal_price = 89.99
     return [cuxiao_price,normal_price]
 
 
@@ -90,7 +152,7 @@ for single_dir in os.listdir(source_dir_name):
 
     sku_idx += 1
     image_count = 0
-
+    
     for file in os.listdir(os.path.join(source_dir_name,single_dir)):
         if file.endswith(".jpg") or file.endswith(".png") or file.endswith(".jpeg"):
                 image_count += 1
@@ -98,7 +160,7 @@ for single_dir in os.listdir(source_dir_name):
     #根据图片数量获取url连接
     img_url = ['https://raw.githubusercontent.com/Sgzhlh/JBull/master/Football/Popular Club/AC Milan/AC Milan F.C Ronaldinho 2009_2010 Home Retro Premium Jersey/0{}.jpg'.format(str(i)) for i in range(1,image_count+1)]
     #转成字符串
-    img_url = '，'.join(img_url)
+    img_url = ','.join(img_url)
 
     ID.append(getUniqueId())
     string_type.append('variable')
@@ -142,6 +204,68 @@ for single_dir in os.listdir(source_dir_name):
     shuxing_value.append('S, M, L, XL, 2XL')
     shuxing_visible.append(1)
     shuxing_global.append(1)
+    yuan_1.append('')
+    yuan_2.append('')
+    yuan_3.append('')
+    yuan_4.append('default')
+    yuan_5.append('')
+    yuan_6.append('838')
+    yuan_7.append('')
+    yuan_8.append('none')
+    yuan_9.append('inherit')
+    yuan_10.append('inherit')
+    yuan_11.append('inherit')
+    yuan_12.append('after')
+    yuan_13.append('')
+    yuan_14.append('')
+    yuan_15.append('')
+    yuan_16.append('')
+    yuan_17.append('')
+    yuan_18.append('')
+    yuan_19.append('')
+    yuan_20.append('')
+    yuan_21.append('')
+    yuan_22.append('')
+    yuan_23.append('')
+    yuan_24.append('')
+    yuan_25.append('')
+    yuan_26.append('')
+    yuan_27.append('')
+    yuan_28.append('')
+    yuan_29.append('')
+    yuan_30.append('')
+    yuan_31.append('')
+    yuan_32.append('')
+    yuan_33.append('')
+    yuan_34.append('')
+    yuan_35.append('S')
+    yuan_36.append('classic-editor')
+    yuan_37.append('25')
+    yuan_38.append('')
+    yuan_39.append('')
+    yuan_40.append('bottom')
+    yuan_41.append('')
+    yuan_42.append(1)
+    yuan_43.append('default')
+    yuan_44.append('default')
+    yuan_45.append('none')
+    yuan_46.append('')
+    yuan_47.append('')
+    yuan_48.append('')
+    yuan_49.append('')
+    yuan_50.append('')
+    yuan_51.append('')
+    yuan_52.append('')
+    yuan_53.append('')
+    yuan_54.append('text')
+    yuan_55.append('')
+    yuan_56.append('')
+    yuan_57.append('')
+    yuan_58.append('text')
+    yuan_59.append('')
+    yuan_60.append('')
+    yuan_61.append(0)
+    yuan_62.append('')
 
 
     # #再增加5条数据 S M L XL 2XL
@@ -190,99 +314,69 @@ for single_dir in os.listdir(source_dir_name):
         shuxing_value.append(shuxing_value_list[position - 1])
         shuxing_visible.append('')
         shuxing_global.append(1)
+        yuan_1.append('')
+        yuan_2.append('')
+        yuan_3.append('')
+        yuan_4.append('')
+        yuan_5.append('')
+        yuan_6.append('')
+        yuan_7.append('')
+        yuan_8.append('')
+        yuan_9.append('')
+        yuan_10.append('')
+        yuan_11.append('')
+        yuan_12.append('')
+        yuan_13.append('')
+        yuan_14.append('')
+        yuan_15.append('')
+        yuan_16.append('')
+        yuan_17.append('')
+        yuan_18.append('')
+        yuan_19.append('')
+        yuan_20.append('')
+        yuan_21.append('')
+        yuan_22.append('')
+        yuan_23.append('')
+        yuan_24.append('')
+        yuan_25.append('')
+        yuan_26.append('')
+        yuan_27.append('')
+        yuan_28.append('')
+        yuan_29.append('')
+        yuan_30.append('')
+        yuan_31.append('')
+        yuan_32.append('')
+        yuan_33.append('')
+        yuan_34.append('')
+        yuan_35.append('')
+        yuan_36.append('')
+        yuan_37.append('')
+        yuan_38.append('')
+        yuan_39.append('')
+        yuan_40.append('')
+        yuan_41.append('')
+        yuan_42.append('')
+        yuan_43.append('')
+        yuan_44.append('')
+        yuan_45.append('')
+        yuan_46.append('')
+        yuan_47.append('')
+        yuan_48.append('')
+        yuan_49.append('')
+        yuan_50.append('')
+        yuan_51.append('')
+        yuan_52.append('')
+        yuan_53.append('')
+        yuan_54.append('')
+        yuan_55.append('')
+        yuan_56.append('')
+        yuan_57.append('')
+        yuan_58.append('')
+        yuan_59.append('')
+        yuan_60.append('')
+        yuan_61.append('')
+        yuan_62.append('')
 
-
-
-# id_sum   = sum(ID, [])
-# string_type_sum = sum(string_type,[])
-# sku_sum   = sum(sku,[])
-# name_sum   = sum(name,[])
-# is_publish_sum = sum(is_publish,[])
-# is_popular_sum   = sum(is_popular,[])
-# is_visible_sum   = sum(is_visible, [])
-# description_sum = sum(description,[])
-# brief_description_sum   = sum(brief_description,[])
-# cuxiao_start_time_sum   = sum(cuxiao_start_time,[])
-# cuxiao_deadline_time_sum = sum(cuxiao_deadline_time,[])
-# sui_status_sum   = sum(sui_status,[])
-# sui_type_sum   = sum(sui_type,[])
-# is_youhuo_sum = sum(is_youhuo,[])
-# kucun_sum   = sum(kucun,[])
-# kucun_buzu_sum   = sum(kucun_buzu, [])
-# quehuo_xiadan_sum = sum(quehuo_xiadan,[])
-# single_sale_sum   = sum(single_sale,[])
-# weight_sum   = sum(weight, [])
-# changdu_sum = sum(changdu,[])
-# kuandu_sum   = sum(kuandu,[])
-# gaodu_sum   = sum(gaodu, [])
-# kehupingjia_sum = sum(kehupingjia,[])
-# gouwubeizhu_sum   = sum(gouwubeizhu,[])
-# cuxiao_price_sum   = sum(cuxiao_price, [])
-# changgui_price_sum = sum(changgui_price,[])
-# fenlei_sum   = sum(fenlei,[])
-# biaoqian_sum   = sum(biaoqian, [])
-# yunfeilei_sum = sum(yunfeilei,[])
-# tupian_url_sum   = sum(tupian_url,[])
-# xiazzai_limit_sum   = sum(xiazzai_limit, [])
-# xiazai_expire_days_sum = sum(xiazai_expire_days,[])
-# fuji_sum   = sum(fuji,[])
-# fenzhu_product_sum   = sum(fenzhu_product,[])
-# jiaocha_sale_sum   = sum(jiaocha_sale,[])
-# outside_url_sum   = sum(outside_url,[])
-# buttion_text_sum   = sum(buttion_text,[])
-# weizhi_sum   = sum(weizhi,[])
-# shuxing_name_sum   = sum(shuxing_name,[])
-# shuxingxing_value,[])
-# shuxing_visible_sum   = sum(shuxing_visible,[])
-# shuxing_global_sum = sum(shuxing_global,[])
-
-# 创建数据表
-# house = pd.DataFrame({
-#     'ID': id_sum,
-#     '类型':string_type_sum,
-#     'SKU': sku_sum,
-#     '名称': name_sum,
-#     '已发布': is_publish_sum,
-#     '是推荐产品': is_popular_sum,
-#     '在列表页可见': is_visible_sum,
-#     '简单描述': brief_description_sum,
-#     '描述': description_sum,
-#     '促销开始日期': cuxiao_start_time_sum,
-#     '促销截止日期': cuxiao_deadline_time_sum,
-#     '税状态': sui_status_sum,
-#     '税类': sui_type_sum,
-#     '有货？': is_youhuo_sum,
-#     '库存': kucun_sum,
-#     '库存不足': kucun_buzu_sum,
-#     '允许缺货下单？': quehuo_xiadan_sum,
-#     '单独出售': single_sale_sum,
-#     '重量(公斤)': weight_sum,
-#     '长度(厘米)': changdu_sum,
-#     '宽度（厘米）': kuandu_sum,
-#     '高度（厘米）': gaodu_sum,
-#     '允许客户评价？': kehupingjia_sum,
-#     '购物备注': gouwubeizhu_sum,
-#     '促销价格': cuxiao_price_sum,
-#     '常规售价': changgui_price_sum,
-#     '分类': fenlei_sum,
-#     '标签': biaoqian_sum,
-#     '运费类': yunfeilei_sum,
-#     '图片': tupian_url_sum,
-#     '下载限制': xiazzai_limit_sum,
-#     '下载的过期天数': xiazai_expire_days_sum,
-#     '父级': fuji_sum,
-#     '分组产品': fenzhu_product_sum,
-#     '交叉销售': jiaocha_sale_sum,
-#     '交叉销售': jiaocha_sale_sum,
-#     '外部链接': outside_url_sum,
-#     '按钮文本': buttion_text_sum,
-#     '位置': weizhi_sum,
-#     '属性 1 名称': shuxing_name_sum,
-#     '属性 1 值': shuxing_value_sum,
-#     '属性 1 可见': shuxing_visible_sum,
-#     '属性 1  的全局': shuxing_global_sum,
-# }
-# )
 
 # print(
 #     ID,string_type,sku,name,is_publish,is_popular,is_visible,brief_description,cuxiao_start_time,cuxiao_deadline_time,sui_status,sui_type,is_youhuo,
@@ -341,6 +435,70 @@ house = pd.DataFrame({
     '属性 1 值': shuxing_value,
     '属性 1 可见': shuxing_visible,
     '属性 1  的全局': shuxing_global,
+
+    '元数据：_elementor_edit_mode':yuan_1,
+    '元数据：_elementor_template_type':yuan_2,
+    '元数据：_elementor_version':yuan_3,
+    '元数据：_wp_page_template':yuan_4,
+    '元数据：_elementor_data':yuan_5,
+    '元数据：woodmart_sguide_select'	:yuan_6,
+    '元数据：_product_360_image_gallery'	:yuan_7,
+    '元数据：_woodmart_whb_header':yuan_8,
+    '元数据：_woodmart_product_design':yuan_9,
+    '元数据：_woodmart_single_product_style'	:yuan_10,
+    '元数据：_woodmart_thums_position':yuan_11,
+    '元数据：_woodmart_extra_position':yuan_12,
+    '属性 2 名称':yuan_13,
+    '属性 2 值'	:yuan_14,
+    '属性 2 可见	':yuan_15,
+    '属性 2  的全局'	:yuan_16,
+    '属性 3 名称	':yuan_17,
+    '属性 3 值'	:yuan_18,
+    '属性 3 可见	':yuan_19,
+    '属性 3  的全局'	:yuan_20,
+    '属性 4 名称	':yuan_21,
+    '属性 4 值'	:yuan_22,
+    '属性 4 可见	':yuan_23,
+    '属性 4  的全局'	:yuan_24,
+    '属性 5 名称'	:yuan_25,
+    '属性 5 值':yuan_26,
+    '属性 5 可见	':yuan_27,
+    '属性 5  的全局'	:yuan_28,
+    '元数据：_woodmart_product_video	:yuan_1':yuan_29,
+    '元数据：_oembed_992c44b3a32aec363189635e67914edf':yuan_30,
+    '元数据：_oembed_time_992c44b3a32aec363189635e67914edf'	:yuan_31,
+    '元数据：_oembed_db09be560b4aefcb5b04e498f87b8563'	:yuan_32,
+    '元数据：_woodmart_new_label	':yuan_33,
+    '元数据：_woodmart_extra_content	':yuan_34,
+    '属性 1  的默认值':yuan_35,
+    '元数据：_last_editor_used_jetpack'	:yuan_36,
+    '元数据：rank_math_seo_score':yuan_37,
+    '元数据：woodmart_price_unit_of_measure'	:yuan_38,
+    '元数据：_rank_math_gtin_code':yuan_39,
+    '元数据：_ppcp_button_position':yuan_40,
+    '元数据：woodmart_total_stock_quantity':yuan_41,
+    '元数据：rank_math_internal_links_processed':yuan_42,
+    '元数据：_woodmart_main_layout':yuan_43,
+    '元数据：_woodmart_sidebar_width	':yuan_44,
+    '元数据：_woodmart_custom_sidebar':yuan_45,
+    '元数据：_woodmart_new_label_date':yuan_46,
+    '元数据：_woodmart_swatches_attribute':yuan_47,
+    '元数据：_woodmart_related_off':yuan_48,
+    '元数据：_woodmart_exclude_show_single_variation	':yuan_49,
+    '元数据：_woodmart_product_hashtag':yuan_50,
+    '元数据：_woodmart_product-background':yuan_51,
+    '元数据：_woodmart_hide_tabs_titles'	:yuan_52,
+    '元数据：_woodmart_product_custom_tab_title'	:yuan_53,
+    '元数据：_woodmart_product_custom_tab_content_type':yuan_54,
+    '元数据：_woodmart_product_custom_tab_content':yuan_55,
+    '元数据：_woodmart_product_custom_tab_html_block	':yuan_56,
+    '元数据：_woodmart_product_custom_tab_title_2':yuan_57,
+    '元数据：_woodmart_product_custom_tab_content_type_2':yuan_58,
+    '元数据：_woodmart_product_custom_tab_content_2'	:yuan_59,
+    '元数据：_woodmart_product_custom_tab_html_block_2':yuan_60,
+    '元数据：rank_math_primary_product_cat':yuan_61,
+    '元数据：wd_additional_variation_images_data':yuan_62
+
 }
 )
 #house.columns['ID','类型','SKU','名称','已发布','是推荐产品','在列表页可见','简单描述','描述','促销开始日期','促销截止日期','税状态','税类','有货？','库存','库存不足','允许缺货下单？','单独出售','重量(公斤)','长度(厘米)','宽度（厘米）','高度（厘米）','允许客户评价？','购物备注','促销价格','常规售价','分类','标签','运费类','图片','下载限制','下载的过期天数','父级','分组产品','交叉销售','交叉销售','外部链接','按钮文本','位置','属性 1 名称','属性 1 值','属性 1 可见','属性 1  的全局']
@@ -352,7 +510,7 @@ house = pd.DataFrame({
 
 house.head()
 #导出csv时去掉序号列
-house.to_csv('wc.csv',index=False,encoding='utf-8')
+house.to_csv(source_dir_name+'/wc.csv',index=False,encoding='utf-8')
 
 
 
